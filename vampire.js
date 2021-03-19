@@ -57,10 +57,10 @@ class Vampire {
     let count = 0;
     if (this.numberOfOffspring > 0) {
       for (const offspring of this.offspring) {
-        count += 1 + offspring.totalDescendents
+        count += 1 + offspring.totalDescendents;
       }
     }
-    return count
+    return count;
   }
 
   // Returns an array of all the vampires that were converted after 1980
@@ -72,7 +72,7 @@ class Vampire {
     for (const offspring of this.offspring) {
       millenials = millenials.concat(offspring.allMillennialVampires);
     }
-    return millenials
+    return millenials;
   }
 
   /** Stretch **/
